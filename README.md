@@ -37,6 +37,20 @@ python app.py
 
 The website will be available at `http://localhost:5000`
 
+### Configuration
+
+You can customize the application behavior using environment variables:
+
+- `FLASK_DEBUG`: Set to `False` to disable debug mode (default: `True`)
+- `FLASK_HOST`: Set the host address (default: `127.0.0.1`)
+- `FLASK_PORT`: Set the port number (default: `5000`)
+
+Example for production-like settings:
+
+```bash
+FLASK_DEBUG=False FLASK_HOST=0.0.0.0 python app.py
+```
+
 ## Project Structure
 
 ```
